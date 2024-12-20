@@ -1,5 +1,5 @@
 version: "1"
 rules:
-  - base: master
-    upstream: vogler:main    # change `wei` to the owner of upstream repo
+  - base: main
+    upstream: vogler:main
     mergeMethod: merge
