@@ -20,7 +20,7 @@ jobs:
       run: docker build . --file Dockerfile --tag c0rrre/free-games-claimer:latest
       
     - name: Docker Push
-      run: docker push c0rrre/streamlink
+      run: docker push c0rrre/free-games-claimer
 
     - name: Docker Hub Description
       uses: peter-evans/dockerhub-description@v4
