@@ -5,8 +5,12 @@
   "forkProcessing": "enabled",
   "dependencyDashboard": true,
   "dependencyDashboardApproval": true,
-  "assignees": ["c0rrre"],
-  "labels": ["dependencies"],
+  "assignees": [
+    "c0rrre"
+  ],
+  "labels": [
+    "dependencies"
+  ],
   "packageRules": [
     {
       "matchManagers": [
@@ -19,15 +23,21 @@
       ]
     },
     {
-      "matchManagers": ["npm"],
-      "matchPackagePatterns": ["*"],
-      "matchPaths": ["package.json"],
+      "matchManagers": [
+        "npm"
+      ],
+      "matchFileNames": [
+        "package.json"
+      ],
       "groupName": "npm dependencies",
       "prConcurrentLimit": 99,
-      "commitMessagePrefix": "[github-action] ",
+      "commitMessagePrefix": "[npm] ",
       "reviewers": [
         "c0rrre"
-        ]
+      ],
+      "matchPackageNames": [
+        "*"
+      ]
     },
     {
       "matchManagers": [
